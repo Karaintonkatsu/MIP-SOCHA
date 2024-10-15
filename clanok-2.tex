@@ -1,11 +1,12 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{coursepaper}
+\documentclass[10pt,twocolumn,twoside,slovak,a4paper]{coursepaper}
 
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
 \usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
@@ -15,6 +16,13 @@
 %\usepackage{times}
 
 \pagestyle{headings}
+\usepackage{float}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=200]{fitlogo.png}  
+  \caption{Your caption here}
+  \label{fig:your_label}
+\end{figure}
 
 \title{Zbieranie údajov "cookies" a ich použitie v odporúčacích algoritmoch\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
 
@@ -30,8 +38,7 @@
 
 \begin{document}
 
-\includegraphics[width = 220]{SOT_cv44.png} % Adjust width as needed
-\includegraphics[width = 220]{SOT_cv4.png} % Adjust width as needed
+
 
 
 
@@ -39,10 +46,19 @@
 
 \begin{abstract}
 \ldots
+\includegraphics[width = 250]{SOT_cv44.png} 
+\includegraphics[width = 250]{SOT_cv4.png} 
 \end{abstract}
 
 
 \section{Úvod}
+
+\begin{figure*}[ht]
+  \centering
+  \includegraphics[width=200]{SOT_cv4.png} 
+  \caption{Daminako pomohol}
+  \label{fig:my_label}
+\end{figure*}
 
 \input{priklad.tex}
 
